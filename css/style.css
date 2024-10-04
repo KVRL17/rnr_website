@@ -5,6 +5,22 @@
     --dark: #353535;
 }
 
+.border-bottom-custom {
+    border-bottom: 4px solid transparent; /* Adjust thickness as needed */
+    position: relative;
+}
+
+.border-bottom-custom::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, black 50%, #fd292d 50%);
+    z-index: -1; /* Place it behind the navbar */
+}
+
 .fw-medium {
     font-weight: 500 !important;
 }
