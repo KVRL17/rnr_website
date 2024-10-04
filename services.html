@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>RNR Power Control</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>123 Street, New York, USA</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+012 345 6789</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><img src="logo.jpg" style="height: 50px;width: 150px;"></img></h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <a href="feature.html" class="nav-item nav-link ">Why Choose RNR?</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="" class="dropdown-item active">Electrical</a>
+                        <a href="service.html" class="dropdown-item">Solar</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="margin-top: 40px;display: flex;">
+        <div class="container" id="about">
+            <div class="row gx-5">
+                
+                <!-- Industrial Sector -->
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="./img/electricalimage.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-3"><strong style="color: #fd292d;">ELECTRICAL</strong></h3>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        We specialize in the design and manufacturing of critical electrical infrastructure, including PCC, MCC, and APFC panels, Lightning Distribution DB, Bus Ducts, HT/LT meter boxes, and DG synchronization panels.
+                    </p>
+                    <h4 style="color: #fd292d;">Design and Engineering:</h4>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        Customized panel design based on customer specifications, Electrical schematic development, Bill of materials (BOM) generation.
+                    </p>
+                    <h4 style="color: #fd292d;">Manufacturing:</h4>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        Panel fabrication and assembly, Wiring and termination, Quality control and testing.
+                    </p>
+                    <h4 style="color: #fd292d;">Installation and Commissioning:</h4>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        On-site installation and setup, System integration and commissioning, Site acceptance testing.
+                    </p>
+                </div>
+                
+            </div>
+            <br></br>
+            <div class="row gx-5">
+                
+                <!-- Industrial Sector -->
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="./img/pcc panel.png" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-3"><strong style="color: #fd292d;">PCC PANEL</strong></h3>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        We are engaged in the manufacturing of Power Control Centre Panels from the best raw materials. We meet the requirements of International Standards along with compliance to local standards and regulations.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        The complete structure shall be rigid, self-supporting, free from twists and bends. The panels will be totally dust and vermin proof. They will have fixed or draw-out type executions as may be desired.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        Power Control Centre Panels will undergo pre-treatment covering degreasing, water rinsing. They will be synthetic enamel painted or powder coated as per requirements.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        A main power control panel that contains feeder breakers, supply breakers, monitoring devices, control devices, switching devices, protection devices, and instrumentation devices.
+                    </p>
+                </div>
+                
+            </div>
+            <br></br>
+            <div class="row gx-5">
+                
+                <!-- Industrial Sector -->
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="./img/bus duct.webp" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-3"><strong style="color: #fd292d;">BUS DUCT</strong></h3>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        We offer the best quality Bus Ducts that can be customized as per the customer’s requirements. All these products, specially designed for different industrial applications, provide better connection, superior performance, and enhanced security.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        We have a fully equipped facility with the latest and most sophisticated machines. These ducts also undergo stringent quality checks at all levels, ensuring that they meet high standards. 
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        The BMS duct oversees conditions including temperature, pressure, humidity, and exhaust heat levels, triggering alerts if they stray from preset thresholds and ensuring maximal HVAC energy efficiency.
+                    </p>
+                </div>
+                
+            </div>
+            <br></br>
+            <div class="row gx-5">
+                
+                <!-- Industrial Sector -->
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="./img/sub switch board.png" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-3"><strong style="color: #fd292d;">SUB-SWITCH BOARD</strong></h3>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        We are offering a wide range of Sub Switch Board Panels made of superior quality CRCA steel sheets that provide resistance from dust and vermin. 
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        Durable and cost-effective, these panels provide superior performance and are highly reliable. Keeping in mind the specific requirements of the end users, we design our products in varied specifications, offered at competitive prices. 
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        RNR Power Control engages in providing quality electrical sub switch boards and ensures that clients receive timely services.
+                    </p>
+                </div>
+                
+            </div>
+            <br></br>
+            <div class="row gx-5">
+                
+                <!-- Industrial Sector -->
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="./img/outdoor panel.png" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-3"><strong style="color: #fd292d;">OUTDOOR PANEL</strong></h3>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        We are engaged in the manufacturing of Feeder Pillar Panels that have a specified standard of protection. We exist among some renowned feeder pillar manufacturers and suppliers based in India.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        The electric feeder pillars manufactured by us are perfect for outdoor use and are widely applicable in various non-industrial and industrial applications. Our specialization lies in designing the pillars according to the specific requirements of our customers.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        We achieve accurate results in our production by integrating a variety of resources in our manufacturing process.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        These feeder pillars are extensively used in:
+                    </p>
+                    <ul class="mb-4" style="text-align: justify;color: black;">
+                        <li>Hotels</li>
+                        <li>Residential Complexes</li>
+                        <li>Townships</li>
+                        <li>Industrial Parks</li>
+                    </ul>
+                </div>                
+            </div>
+            <br></br>
+            <div class="row gx-5">
+                
+                <!-- Industrial Sector -->
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="./img/apfc panel.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-3"><strong style="color: #fd292d;">APFC PANEL</strong></h3>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        Automatic Power Factor Control Panels are primarily used for improving the Power Factor. Power Factor is the ratio of active power to apparent power and is a key factor in measuring electrical consumption. With the rising cost of electricity, it is crucial to reduce electrical consumption to minimize expenses.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        Automatic Power Factor Control Panels are essential for achieving this goal, especially in industries where electrical installations supply large electrical loads. A dip in Power Factor can lead to operational losses and penalties from the electricity board responsible for supply.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        We offer a wide range of standard and customized APFC panels and remain competitive in the industry. These panels effectively and automatically manage quickly changing and scattered loads while maintaining a high Power Factor. 
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        As renowned manufacturers of APFC Panels, we are synonymous with quality and reliability. Our panels are available in different current ratings to cater to various applications.
+                    </p>
+                </div>                
+            </div>
+            <br></br>
+            <div class="row gx-5">
+                
+                <!-- Industrial Sector -->
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="./img/electricalimage.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-3"><strong style="color: #fd292d;">ELECTRICAL SERVICES</strong></h3>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        Solar energy is becoming increasingly popular as people seek to reduce their carbon footprint and lower their electricity bills.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        We provide professionals who evaluate your property’s solar potential, considering factors like roof orientation, shading, and electricity consumption.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        Based on your needs and budget, they design a solar system that optimizes energy production. They source high-quality solar panels, inverters, and other components.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        Skilled technicians install the system safely and efficiently.
+                    </p>
+                </div>
+                                
+            </div>
+            <br></br>
+            <div class="row gx-5">
+                
+                <!-- Industrial Sector -->
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="./img/epc based projects.png" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-3"><strong style="color: #fd292d;">EPC BASED PROJECTS</strong></h3>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        Solar EPC (Engineering, Procurement, and Construction) is a comprehensive approach to implementing solar energy projects for residential or industrial applications. It involves the design, engineering, procurement of materials, construction, and commissioning of solar power systems.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        To ensure a smooth and effective transition to renewable energy, RNR Power Controls provides full EPC services that address every stage of your solar project. From preliminary feasibility studies and customized design to the acquisition of premium components and meticulous assembly, our knowledgeable staff coordinates every step of the process.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        In every project, we prioritize efficiency, quality, and reliability. We also customize our services to match the specific energy requirements of our clients, which include residential, commercial, and industrial sectors. You can rely on RNR Power Controls to manage your solar project skillfully, providing long-term savings and peak performance while promoting sustainability.
+                    </p>
+                </div>        
+            </div>
+            <br></br>
+            <div class="row gx-5">
+                
+                <!-- Industrial Sector -->
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="./img/panel-ercetion-and-commissioning.png" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-3"><strong style="color: #fd292d;">PANEL ERECTION & COMMISSIONING</strong></h3>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        Our Panel Erection & Commissioning services at RNR Power Controls guarantee the most precise and efficient installation and operation of your solar power system. We provide erection, commissioning, and installation services for electrical panels, including industrial erection and commissioning of plant, machinery, or equipment.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        From the safe installation of solar panels to the thorough commissioning of the entire system, our knowledgeable staff oversees every stage of the procedure. To ensure peak performance and dependability, we take care of panel alignment, wiring, and integration, followed by thorough testing and system inspections.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        RNR Power Controls ensures that your solar installation is up and running properly, producing maximum energy output and contributing to a sustainable future by adhering to industry best practices and regulatory requirements.
+                    </p>
+                </div>                        
+            </div>
+            <br></br>
+            <div class="text-center">
+            <h3 class="mb-3"><strong style="color: black;">OTHER SERVICES</strong></h3>
+            </div>
+            <br></br>
+            <div class="row gx-5">
+                
+                <!-- Industrial Sector -->
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="./img/ceig approval.avif" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-3"><strong style="color: #fd292d;">CEIG APPROVAL</strong></h3>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        Solar systems that satisfy the exacting standards of CEIG (Chief Electrical Inspector to Government) certification are a specialty of RNR Power Controls. All applications with a load of more than 33KV require approval from the CEIG. Additionally, CEIG approves solar plants that generate more than 100KW of electricity and all types of Captive Power Plants.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        From design and component selection to installation and testing, our committed staff ensures that every aspect of your solar system conforms to the strictest safety and regulatory standards. We oversee the complete CEIG approval process, which includes thorough inspections, documentation, and certifications, to ensure that your solar system meets all requirements and is prepared for use.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        When you work with RNR Power Controls, you can be confident that your solar project complies with legal requirements, guaranteeing safe, dependable, and efficient energy generation.
+                    </p>
+                </div>                                        
+            </div>
+            <br></br>
+            <div class="row gx-5">
+                
+                <!-- Industrial Sector -->
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="./img/eb power control.avif" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-3"><strong style="color: #fd292d;">EB POWER APPROVAL</strong></h3>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        RNR Power Controls provides solar solutions recognized by the Electricity Board (EB), guaranteeing complete adherence to regional laws and ordinances. This includes obtaining permits for environmental clearance from the pollution control board, fire department’s certificate of fire safety, clearance permit from the forest department, and Chief Electrical Inspector’s approval for project commissioning.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        Our solar systems are approved and certified by the Electricity Board, allowing them to be seamlessly integrated with the existing power infrastructure. We handle everything from system design and installation to paperwork and approval procedures, providing our clients with a hassle-free experience.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        You can rely on RNR Power Controls to ensure that your solar system is not only dependable and efficient but also fully compliant with legal standards, guaranteeing seamless operation and qualifying you for government subsidies and grid connection.
+                    </p>
+                </div>                                                        
+            </div>
+            <br></br>
+            <div class="row gx-5">
+                
+                <!-- Industrial Sector -->
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="./img/cable laying termination.avif" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-3"><strong style="color: #fd292d;">CABLE LAYING TERMINATION (HT / LT)</strong></h3>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        For solar power systems, RNR Power Controls provides expert Cable Laying and Termination services for both High Tension (HT) and Low Tension (LT) applications. Cable termination refers to the process of connecting the end of a cable to a suitable terminal or device, ensuring the secure transmission of electrical power or signals between the cable and connected equipment.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        Accurate installation and safe termination of cables are essential for the effective and secure functioning of your solar power system, and our skilled specialists guarantee attention to these details. Whether installing underground cables, managing complex cable routes, or cutting connections in switchgear and transformers, we follow strict safety regulations and industry best practices.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;color: black;">
+                        RNR Power Controls is dedicated to providing dependable and long-lasting cable installations that maximize the lifespan and performance of your solar system.
+                    </p>
+                </div>                                                        
+            </div>
+                </div>
+                </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-9 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Omkar City, Bagalur Road Hosur -635109</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>46-A Kulanthaivel Nagar, Visuvasapuram, Saravanampatti, Coimbatore- 641 035.</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9994258071</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>rnrpowercontrols@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">RNR Power</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

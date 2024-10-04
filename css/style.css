@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #AB7442;
+    --primary: orangered;
     --light: #F5F5F5;
     --dark: #353535;
 }
@@ -310,6 +310,101 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
+.product-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+}
+
+.product-image {
+    width: 100px; /* Initial size of the image */
+    margin-right: 20px;
+    border: 5px solid #fd292d; /* Border color and thickness */
+    border-radius: 50%; /* Makes the border circular */
+    overflow: hidden; /* Ensures the image does not overflow the border */
+    transition: transform 0.3s; /* Smooth transition for the hover effect */
+}
+
+.product-image img {
+    width: 100%; /* Ensures the image fits within the div */
+    transition: transform 0.3s; /* Smooth transition for the image hover effect */
+}
+
+.product-image:hover img {
+    transform: scale(1.1); /* Increases image size on hover */
+}
+
+.product-details {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.product-details h2 {
+    color: #fd292d; /* Initial color of the heading */
+    margin-bottom: 10px;
+    transition: color 0.3s; /* Smooth transition for the hover effect */
+}
+
+.product-details h3 {
+    color: #fd292d; /* Initial color of the heading */
+    margin-bottom: 10px;
+    transition: color 0.3s; /* Smooth transition for the hover effect */
+}
+
+.product-details h2:hover {
+    color: #111010; /* Change color on hover */
+}
+
+.product-details h3:hover {
+    color: #111010; /* Change color on hover */
+}
+
+.product-details p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column; /* Stacks the image and details vertically */
+        align-items: center; /* Center aligns the items */
+        text-align: center; /* Centers the text */
+    }
+
+    .product-image {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 15px; /* Add some space below the image */
+    }
+
+    .product-image {
+        width: 80px; /* Smaller size of the image for mobile */
+    }
+
+    .product-details h2 {
+        font-size: 20px; /* Adjust heading size for mobile */
+    }
+
+    .product-details p {
+        font-size: 14px; /* Adjust paragraph size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-image {
+        width: 70px; /* Further reduce image size for very small screens */
+    }
+
+    .product-details h2 {
+        font-size: 18px; /* Further adjust heading size for very small screens */
+    }
+
+    .product-details p {
+        font-size: 12px; /* Further adjust paragraph size for very small screens */
+    }
+}
 
 /*** Section Title ***/
 .section-title h1 {
