@@ -260,7 +260,8 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/homebg1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/homebg1.jpg
+    ) center center no-repeat;
     background-size: cover;
 }
 
@@ -363,7 +364,7 @@
     transition: color 0.3s; /* Smooth transition for the hover effect */
 }
 
-.product-details h3 {
+.product-details h4 {
     color: #fd292d; /* Initial color of the heading */
     margin-bottom: 10px;
     transition: color 0.3s; /* Smooth transition for the hover effect */
@@ -373,7 +374,7 @@
     color: #111010; /* Change color on hover */
 }
 
-.product-details h3:hover {
+.product-details h4:hover {
     color: #111010; /* Change color on hover */
 }
 
