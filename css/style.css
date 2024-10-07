@@ -364,17 +364,34 @@
     transition: color 0.3s; /* Smooth transition for the hover effect */
 }
 
-.product-details h4 {
+.product-details h3 {
     color: #fd292d; /* Initial color of the heading */
     margin-bottom: 10px;
     transition: color 0.3s; /* Smooth transition for the hover effect */
+    font-size: 2rem; /* Default font size for larger screens */
+}
+
+/* Media query for tablets and medium screens */
+@media (max-width: 768px) {
+    .product-details h3 {
+        font-size: 1.8rem; /* Slightly smaller font for medium screens */
+        margin-bottom: 8px;
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    .product-details h3 {
+        font-size: 1.5rem; /* Smaller font size for mobile screens */
+        margin-bottom: 6px;
+    }
 }
 
 .product-details h2:hover {
     color: #111010; /* Change color on hover */
 }
 
-.product-details h4:hover {
+.product-details h3:hover {
     color: #111010; /* Change color on hover */
 }
 
