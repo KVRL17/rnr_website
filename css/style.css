@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: orangered;
+    --primary: #3498db;
     --light: #F5F5F5;
     --dark: #353535;
 }
@@ -20,6 +20,62 @@
     background: linear-gradient(to right, black 50%, #fd292d 50%);
     z-index: -1; /* Place it behind the navbar */
 }
+
+.works{padding: 0 0 90px;margin-top: 73px;}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    margin: 20px;
+  }
+  
+  .service-card {
+    width: calc(33.333% - 40px); /* Three cards per row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .service-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .service-card {
+      width: calc(50% - 40px); /* Two cards per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service-card {
+      width: 100%; /* One card per row on mobile */
+    }
+  }
 
 .fw-medium {
     font-weight: 500 !important;
@@ -41,6 +97,92 @@
     z-index: 99;
 }
 
+/* Main Container */
+.maindiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/solar\ panel\ 4.jpg) no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 127px 0 120px;
+}
+
+/* Individual partner logo styling */
+.maindiv div {
+    text-align: center;
+}
+
+/* Dealership text styling */
+.dealership-text {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+/* Logo Animation and Hover Effect */
+.animated-logo {
+    width: 200px;
+    height: auto;
+    animation: pulse 3s infinite;
+    transition: transform 0.5s ease;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Hover effect for logos */
+.toshiba img:hover, .carrier img:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* Fade-in animation for text */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design for Smaller Devices */
+@media screen and (max-width: 768px) {
+    .dealership-text {
+        font-size: 20px;
+    }
+
+    .animated-logo {
+        width: 150px;
+        margin: 3px;
+    }
+}
+
+/* Further Adjustment for Very Small Screens (Mobile) */
+@media screen and (max-width: 480px) {
+    .dealership-text {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .animated-logo {
+        width: 120px;
+        margin: 3px;
+    }
+
+    .maindiv {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 /*** Spinner ***/
 #spinner {
